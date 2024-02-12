@@ -4,8 +4,6 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
 import { SimpleAutocompleteComponent } from './simple-autocomplete/simple-autocomplete.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
@@ -15,10 +13,9 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     BrowserModule,
     ReactiveFormsModule,
     MatAutocompleteModule,
-    RouterModule.forRoot([{ path: '', component: ProductListComponent }]),
     SimpleAutocompleteComponent,
   ],
-  declarations: [AppComponent, TopBarComponent, ProductListComponent],
+  declarations: [AppComponent],
   bootstrap: [AppComponent],
   providers: [provideAnimationsAsync()],
 })
