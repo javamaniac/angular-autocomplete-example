@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SimpleAutocompleteComponent } from './simple-autocomplete/simple-autocomplete.component';
+import { SimpleAutocompleteComponentPrime } from './simple-autocomplete/simple-autocomplete.component-prime';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
@@ -14,6 +15,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     ReactiveFormsModule,
     MatAutocompleteModule,
     SimpleAutocompleteComponent,
+    SimpleAutocompleteComponentPrime
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],

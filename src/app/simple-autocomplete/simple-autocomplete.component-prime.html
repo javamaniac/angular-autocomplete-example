@@ -1,0 +1,20 @@
+<form>
+  
+  <div class="card p-input-filled">
+    <span class="veo p-float-label">
+      <p-autoComplete
+        class="p-element"
+        inputId="float-label"
+        [(ngModel)]="selectedItem"
+        [suggestions]="suggestions"
+        (completeMethod)="search($event)"
+        [dropdown]="true"            
+        [showClear]="true"
+        #auto
+        (onFocus)="onFocus(auto)"
+        autocomplete="off"
+      ></p-autoComplete>
+      <label for="float-label" class="label-autocomplete">Country</label>
+    </span>
+  </div>
+</form>
