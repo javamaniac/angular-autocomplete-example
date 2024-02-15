@@ -42,10 +42,4 @@ export class SimpleAutocompleteComponentPrime {
       suggestion.toLowerCase().includes(event.query.toLowerCase())      
     );
   }
-
-  onFocus(autoComplete: any) {
-    // Solution temporaire pour forcer l'ouverture du panneau
-    // Ceci est une approche non officielle et pourrait ne pas être fiable
-    autoComplete.show()
-  }
 }

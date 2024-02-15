@@ -9,10 +9,10 @@
         [(ngModel)]="selectedItem"
         [suggestions]="suggestions"
         (completeMethod)="search($event)"
+        [completeOnFocus]="true"
         [dropdown]="true"            
         [showClear]="true"
         #auto
-        (onFocus)="onFocus(auto)"
         autocomplete="off"
       ></p-autoComplete>
       <label for="float-label" class="label-autocomplete">Country</label>
